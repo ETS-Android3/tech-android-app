@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ticketfollowup_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ticketfollowup_user"
+            android:layout_height="40dp"
+            android:layout_width="150dp"
+            android:textStyle="bold"
+            android:background="@color/lightgrey"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ticketfollowup_date"
+            android:layout_height="40dp"
+            android:layout_width="240dp"
+            android:textStyle="bold"
+            android:background="@color/lightgrey"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/ticketfollowup_is_private"
+            android:layout_height="80dp"
+            android:layout_width="20dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/ticketfollowup_desc"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

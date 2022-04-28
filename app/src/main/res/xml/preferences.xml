@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:key="itsmng_url"
+        android:title="@string/preferences_itsmng_url" />
+
+    <CheckBoxPreference
+        android:key="itsmng_com_ssl"
+        android:title="@string/preferences_itsmng_com_ssl" />
+
+    <EditTextPreference
+        android:key="itsmng_api_token"
+        android:title="@string/preferences_itsmng_api_token" />
+
+</PreferenceScreen>

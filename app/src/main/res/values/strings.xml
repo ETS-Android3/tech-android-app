@@ -1,0 +1,139 @@
+<resources>
+    <!-- Global translations -->
+    <string name="app_name">ITSM-NG</string>
+    <string name="navigation_drawer_open">Ouvrir le tirroir</string>
+    <string name="navigation_drawer_close">Fermer de tirroir</string>
+    <string name="nav_header_title">ITSM-NG</string>
+    <string name="nav_header_subtitle">Application techniciens ITSM-NG</string>
+    <string name="nav_header_desc">Barre de navigation</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu Translations -->
+    <string name="menu_my_tickets">Mes tickets</string>
+    <string name="menu_all_tickets">Tous les tickets</string>
+    <string name="menu_create_ticket">Créer un ticket</string>
+    <string name="menu_settings">Paramètres</string>
+
+    <!-- Irrevelant -->
+    <string name="home_second">Home Second</string>
+
+    <!-- Preferences translation -->
+    <string name="preferences_itsmng_url">URL de l\'API ITSM-NG</string>
+    <string name="preferences_itsmng_com_ssl">Vérification du certificat SSL</string>
+    <string name="preferences_itsmng_api_token">Token API de connexion</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Login Failed warning -->
+    <string name="login_failed_title">Erreur d\'authentification</string>
+    <string name="login_failed_description">L\'authentification a echoué, vérifiez votre configuration.</string>
+
+    <!-- Main Activity translation -->
+    <string name="mainactivity_wait_login">Veuillez patienter pendant la connexion au ITSM-NG</string>
+
+    <!-- Main Activity translation -->
+    <string name="app_data_update_create_loading">Veuillez patienter la mise à jour des données</string>
+
+    <!-- Dialog messages -->
+    <string name="success_title">Succès</string>
+    <string name="success_description">La mise à jour des données s\'est faite avec succès.</string>
+    <string name="error_title">Erreur !</string>
+    <string name="error_field_category">Le champ \"Catégorie\" est vide</string>
+    <string name="error_field_location">Le champ \"Lieu\" est vide</string>
+    <string name="error_description">La mise à jour des données a rencontré une erreur</string>
+    <string name="dialog_validate">Fermer</string>
+    <string name="sure_dialog_ticket">Voulez-vous vraiment modifier le ticket ?</string>
+
+    <!-- My ticket / all ticket translation -->
+    <string name="ticket_loading_dialog">Chargement des tickets en cours…</string>
+    <string name="ticket_search_hint">Rechercher un ticket</string>
+    <string name="ticket_id">ID</string>
+    <string name="ticket_date">Date d\'ouverture</string>
+    <string name="ticket_status">Statut</string>
+    <string name="ticket_title">Titre</string>
+    <string name="ticket_description">Description</string>
+    <string name="ticket_priority">Priorité</string>
+    <string name="ticket_category">Catégorie</string>
+    <string name="ticket_location">Lieu</string>
+    <string name="ticket_empty_fields">Aucun(e)</string>
+    <string name="ticket_requester">Demandeur</string>
+    <string name="ticket_assignee">Technicien</string>
+
+    <!-- Ticket create dropdown loading -->
+    <string name="ticket_dropdown_loading">Chargement des intitulés</string>
+
+    <!-- Create ticket fields hint -->
+    <string name="ticket_title_hint">Objet du ticket</string>
+    <string name="ticket_description_hint">Indiquez les détails / informations concernant la demande</string>
+
+    <!-- Create ticket button -->
+    <string name="ticket_create">Créer le ticket</string>
+    <string name="ticket_update">Mettre à jour</string>
+
+    <!-- Ticket priority translation -->
+    <string name="ticket_priority_verylow">T. Basse</string>
+    <string name="ticket_priority_low">Basse</string>
+    <string name="ticket_priority_medium">Moyenne</string>
+    <string name="ticket_priority_high">Haute</string>
+    <string name="ticket_priority_veryhigh">T. Haute</string>
+    <string name="ticket_priority_major">Majeure</string>
+
+    <!-- Ticket Status -->
+    <string name="ticket_status_new">Nouveau</string>
+    <string name="ticket_status_assigned">Assigné</string>
+    <string name="ticket_status_planned">Planifié</string>
+    <string name="ticket_status_pending">En attente</string>
+    <string name="ticket_status_solved">Résolu</string>
+    <string name="ticket_status_closed">Clos</string>
+
+    <!-- Ticket details tab layout -->
+    <string name="ticketdetails_ticket_tab">Ticket</string>
+    <string name="ticketdetails_followup_tab">Suivis</string>
+    <string name="ticketdetails_task_tab">Tâches</string>
+
+    <!-- Computer list -->
+    <string name="computers">Ordinateurs</string>
+    <string name="computer_search_hint">Indiquer le nom du PC</string>
+    <string name="computer_name">Ordinateurs</string>
+
+    <!-- Computer details tabs -->
+    <string name="computer_tab_details">Détail</string>
+    <string name="computer_tab_ticket">Tickets</string>
+
+    <!-- Computer details -->
+    <string name="computer_name_long">Nom de l\'ordinateur</string>
+    <string name="computer_user">Utilisateur</string>
+    <string name="computer_incharge">Responsable</string>
+    <string name="computer_serial_number">Numéro de série</string>
+    <string name="computer_inventory_number">Numéro d\'inventaire</string>
+    <string name="computer_source">Source de la remontée</string>
+
+    <!-- Computer info loading -->
+    <string name="computer_loading_dialog">Chargement des informations ordinateurs</string>
+
+    <!-- Followup -->
+    <string name="ticketfollowup_at">A :</string>
+    <string name="ticketfollowup_from">De :</string>
+    <string name="ticketfollowup_content">Informations du suivi</string>
+    <string name="ticketfollowup_private">Suivi privé ?</string>
+    <string name="ticketfollowup_add">Ajouter le suivi</string>
+    <string name="ticketfollowup_create">Créer un suivi</string>
+
+    <!-- Task -->
+    <string name="tickettask_status">Statut :</string>
+    <string name="tickettask_actiontime">Temps :</string>
+    <string name="tickettask_actiontime_unit">Heure(s)</string>
+    <string name="tickettask_create">Créer une tâche</string>
+    <string name="tickettask_eslapedtime">Temps passé</string>
+    <string name="tickettask_content">Informations sur la tâche</string>
+    <string name="tickettask_private">Tâche privée ?</string>
+    <string name="tickettask_add">Ajouter la tâche</string>
+
+    <!-- Task status -->
+    <string name="tickettask_status_todo">A faire</string>
+    <string name="tickettask_status_done">Fait</string>
+    <string name="tickettask_status_panned">Planifié</string>
+
+    <!-- Yes no spinner -->
+    <string name="spinner_yes">Oui</string>
+    <string name="spinner_no">Non</string>
+</resources>

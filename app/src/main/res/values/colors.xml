@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default app colors -->
+    <color name="colorPrimary">#1B2F62</color>
+    <color name="colorPrimaryDark">#1B2F62</color>
+    <color name="colorAccent">#3A5693</color>
+    <!-- Background fragments colors variant -->
+    <color name="grey">#8E8B8B</color>
+    <color name="lightgrey">#E8E8E8</color>
+    <color name="gold">#d9c0b0</color>
+    <!-- Ticket priorities color -->
+    <color name="priorityVeryLow">#fff2f2</color>
+    <color name="priorityLow">#ffe0e0</color>
+    <color name="priorityMedium">#ffcece</color>
+    <color name="priorityHigh">#ffbfbf</color>
+    <color name="priorityVeryHigh">#ffadad</color>
+    <color name="priorityMajor">#ff5555</color>
+    <!-- Button color -->
+    <color name="colorButton">#f1b7af</color>
+    <!-- Green / Red colors -->
+    <color name="colorGreen">#1cd40f</color>
+    <color name="colorRed">#e01212</color>
+    <!-- Color Itsmng -->
+    <color name="colorItsmng">#a83521</color>
+    <color name="colorDarkItsmng">#772317</color>
+</resources>

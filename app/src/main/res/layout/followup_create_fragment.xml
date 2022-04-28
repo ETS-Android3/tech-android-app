@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/followup_table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightgrey">
+
+            <TextView
+                android:id="@+id/followup_create_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ticketfollowup_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/followup_create_content"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:inputType="textMultiLine"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/lightgrey">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ticketfollowup_private" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/followup_create_private"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:layout_gravity="center" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/followup_create_submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:text="@string/ticketfollowup_add"
+                android:gravity="center" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

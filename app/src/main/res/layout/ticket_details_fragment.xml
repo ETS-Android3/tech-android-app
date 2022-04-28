@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ticketDetails.TicketDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/ticketdetails_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/ticketdetails_table_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ticketdetails_ticket_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ticketdetails_ticket_tab" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ticketdetails_followup_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ticketdetails_followup_tab" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/ticketdetails_task_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ticketdetails_task_tab" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <TableLayout
+                android:id="@+id/ticketdetails_table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="48dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
+
+                <!-- First row : Creation date -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/ticketdetails_date_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_date" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/ticketdetails_date_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- Second row : Status and priority -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/ticketdetails_status_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_status" />
+
+                    <TextView
+                        android:id="@+id/ticketdetails_priority_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_priority" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/ticketdetails_status_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/ticketdetails_priority_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- Third row : Requester and assigned technician -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/ticketdetails_requester_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_requester" />
+
+                    <TextView
+                        android:id="@+id/ticketdetails_assignee_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_assignee" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/ticketdetails_requester_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/ticketdetails_assignee_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- Fourth row : Category and location -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/ticketdetails_category_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_category" />
+
+                    <TextView
+                        android:id="@+id/ticketdetails_location_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_location" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/ticketdetails_category_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_category" />
+
+                    <Spinner
+                        android:id="@+id/ticketdetails_location_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_location" />
+                </TableRow>
+
+                <!-- fifth row : Ticket title -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/ticketdetails_title_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@color/lightgrey"
+                        android:gravity="center"
+                        android:text="@string/ticket_title" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/ticketdetails_title_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- sixth row : Ticket description -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/ticketdetails_desc_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@color/lightgrey"
+                        android:gravity="center"
+                        android:text="@string/ticket_description" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/ticketdetails_desc_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:inputType="textMultiLine" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/ticketdetails_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/ticketdetails_submit_button"
+                        android:layout_width="75dp"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@color/colorButton"
+                        android:gravity="center"
+                        android:text="@string/ticket_update" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/ticketfollowup_table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="48dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="invisible">
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tickettask_table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="48dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="invisible">
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

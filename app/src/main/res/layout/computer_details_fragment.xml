@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/computerdetails_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/computerdetails_table_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/computerdetails_computer_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/computer_tab_details" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/computerdetails_tickets_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/computer_tab_ticket" />
+            </com.google.android.material.tabs.TabLayout>
+
+            <TableLayout
+                android:id="@+id/computerdetails_table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="48dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible">
+
+                <!-- First row : Creation date -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/computerdetails_name_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/computer_name_long" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/computerdetails_name_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- Second row : Status and priority -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/computerdetails_user_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/computer_user" />
+
+                    <TextView
+                        android:id="@+id/computerdetails_manager_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/computer_incharge" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/computerdetails_user_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/computerdetails_manager_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- Third row : Requester and assigned technician -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/computerdetails_location_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_location" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/computerdetails_location_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- Third row : Requester and assigned technician -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/computerdetails_serial_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/computer_serial_number" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/computerdetails_serial_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+                <!-- Fourth row : Category and location -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/computerdetails_inventory_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/computer_inventory_number" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/computerdetails_inventory_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <!-- fifth row : Ticket title -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/computerdetails_source_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@color/lightgrey"
+                        android:gravity="center"
+                        android:text="@string/computer_source" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/computerdetails_source_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/computertickets_table_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="48dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="invisible">
+
+                <TableRow
+                    android:id="@+id/myticket_table_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightgrey">
+
+                    <TextView
+                        android:id="@+id/ticket_id"
+                        android:layout_width="15dp"
+                        android:layout_height="80dp"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_id" />
+
+                    <TextView
+                        android:id="@+id/ticket_title"
+                        android:layout_width="125dp"
+                        android:layout_height="80dp"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_title" />
+
+                    <TextView
+                        android:id="@+id/ticket_category"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_column="4"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_category" />
+
+                    <TextView
+                        android:id="@+id/ticket_location"
+                        android:layout_width="75dp"
+                        android:layout_height="80dp"
+                        android:layout_column="4"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/ticket_location" />
+                </TableRow>
+
+            </TableLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

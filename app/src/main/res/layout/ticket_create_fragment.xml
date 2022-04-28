@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ticketCreate.TicketCreate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:id="@+id/createticket_table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:id="@+id/createticket_title_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightgrey">
+
+                <TextView
+                    android:id="@+id/createticket_title_desc_field"
+                    android:layout_width="75dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ticket_title" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/createticket_title_infos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/createticket_title_infos_field"
+                    android:layout_width="75dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/ticket_title_hint" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/createticket_category_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightgrey">
+
+                <TextView
+                    android:id="@+id/createticket_category_desc_field"
+                    android:layout_width="75dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ticket_category" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/createticket_category_infos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/createticket_category_infos_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/createticket_location_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightgrey">
+
+                <TextView
+                    android:id="@+id/createticket_location_desc_field"
+                    android:layout_width="75dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ticket_location" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/createticket_location_infos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/createticket_location_infos_field"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/createticket_description_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightgrey">
+
+                <TextView
+                    android:id="@+id/createticket_description_desc_field"
+                    android:layout_width="75dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/ticket_description" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/createticket_description_infos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/createticket_description_infos_field"
+                    android:layout_width="75dp"
+                    android:layout_height="240dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="@string/ticket_description_hint"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/createticket_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/createticket_submit_button"
+                    android:layout_width="75dp"
+                    android:layout_height="40dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:background="@color/colorButton"
+                    android:text="@string/ticket_create"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</FrameLayout>

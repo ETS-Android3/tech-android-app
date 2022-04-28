@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mytickets"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/menu_my_tickets" />
+        <item
+            android:id="@+id/nav_alltickets"
+            android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="@string/menu_all_tickets" />
+        <item
+            android:id="@+id/nav_computers"
+            android:icon="?attr/actionModeSelectAllDrawable"
+            android:title="@string/computers" />
+        <item
+            android:id="@+id/nav_createticket"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="@string/menu_create_ticket" />
+    </group>
+</menu>

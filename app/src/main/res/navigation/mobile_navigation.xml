@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_mytickets">
+
+    <fragment
+        android:id="@+id/nav_mytickets"
+        android:name="org.itsmng.androidapp.ui.ticket.TicketFragment"
+        android:label="@string/menu_my_tickets"
+        tools:layout="@layout/fragment_ticket">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_mytickets_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mytickets_second"
+        android:name="org.itsmng.androidapp.ui.ticket.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_mytickets" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_alltickets"
+        android:name="org.itsmng.androidapp.ui.allticket.AllTicketFragment"
+        android:label="@string/menu_all_tickets"
+        tools:layout="@layout/fragment_allticket" />
+
+    <fragment
+        android:id="@+id/nav_computers"
+        android:name="org.itsmng.androidapp.ui.computerList.ComputerListFragment"
+        android:label="@string/computers"
+        tools:layout="@layout/fragment_computerlist" />
+
+    <fragment
+        android:id="@+id/nav_createticket"
+        android:name="org.itsmng.androidapp.ui.ticketCreate.TicketCreate"
+        android:label="@string/menu_create_ticket"
+        tools:layout="@layout/ticket_create_fragment" />
+</navigation>
