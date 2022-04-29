@@ -21,7 +21,7 @@
     <string name="preferences_itsmng_url">URL de l\'API ITSM-NG</string>
     <string name="preferences_itsmng_com_ssl">Vérification du certificat SSL</string>
     <string name="preferences_itsmng_api_token">Token API de connexion</string>
-    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_settings">Options</string>
 
     <!-- Login Failed warning -->
     <string name="login_failed_title">Erreur d\'authentification</string>
